@@ -53,10 +53,6 @@ contract Votacion {
         for(uint i = 0; i<_votantes.length ;i++){
             address votante = _votantes[i];
             require(
-                msg.sender == creador,
-                "Solo el creador puede agregar votantes"
-            );
-            require(
                 !votantes[votante].haVotado,
                 "El votante que desea agregar ya ha votado"
             );
@@ -94,7 +90,7 @@ contract Votacion {
     }
     //Muestra los resultados
     //Si no ha finalizado te salta una advertencia
-    function verResultado() public view returns(string memory opcionGanadora, uint numeroVotosGanador){
+    function verResultado() external view returns(string memory opcionGanadora, uint numeroVotosGanador){
         require(haTerminado, "No se puede ver los resultados antes de finalizar");
         opcionGanadora = ganador;
         numeroVotosGanador = votosGanador;

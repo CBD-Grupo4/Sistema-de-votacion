@@ -1,0 +1,174 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "nombreOpciones",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_votantes",
+						"type": "address[]"
+					}
+				],
+				"name": "agregarVotantes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "creador",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "opciones",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numeroVotos",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "terminaVotacion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "verResultado",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "opcionGanadora",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numeroVotosGanador",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "votantes",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "haVotado",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voto",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "peso",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "opcion",
+						"type": "uint256"
+					}
+				],
+				"name": "votar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Votacion.sol": "Votacion"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Votacion.sol": {
+			"keccak256": "0x074d471d0a4f855a632678a3f5980ca0482dc73f071fac67e2de2f972f2f0c92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e11e6455401dd40a57735af3cce616966af90519b4eca175d6c15d433041101d",
+				"dweb:/ipfs/QmY4WrvfHBAbQGV5m4ogzWjhv5wrD1PimpHBvbMqgngnWx"
+			]
+		}
+	},
+	"version": 1
+}
